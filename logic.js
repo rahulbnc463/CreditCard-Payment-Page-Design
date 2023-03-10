@@ -35,3 +35,8 @@ document.querySelector(".cvvInput").oninput = () => {
   document.querySelector(".cvvBox").innerText =
     document.querySelector(".cvvInput").value;
 };
+
+document.querySelector(".otp-btn").addEventListener("click", () => {
+  event.preventDefault();
+  window.location.href = "./otp.html";
+});

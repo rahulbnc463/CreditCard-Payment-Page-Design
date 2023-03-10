@@ -1,0 +1,62 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background: #14182f;
+  height: 100vh;
+  color: #fff;
+}
+.otpBox {
+  display: flex;
+}
+.otpBox input {
+  color: #fff;
+  outline: none;
+  text-align: center;
+  width: 4rem;
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 2px;
+  border: 2px solid gray;
+  background: #0b1230;
+  font-weight: bold;
+  transition: all 0.1s;
+}
+.otpBox input:focus {
+  border: 2px solid rgb(102, 195, 102);
+  box-shadow: 0 0 2px 2px #27ffd76a;
+}
+.space {
+  margin-right: 1rem !important;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.otp-btn {
+  width: 10%;
+  /* background: linear-gradient(45deg, blueviolet, deeppink); */
+  background: linear-gradient(45deg, #814bf5, #03a9f4);
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.2s linear;
+}
+.otp-btn:hover {
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
