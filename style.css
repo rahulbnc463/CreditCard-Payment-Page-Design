@@ -1,6 +1,116 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: red;
+  font-family: "Ubuntu", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.masterContainer {
+  min-height: 100vh;
+  background: rgb(239, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-flow: column; */
+  padding-bottom: 60px;
+}
+.masterContainer form {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 37rem;
+}
+.masterContainer form .inputBox {
+  margin-top: 20px;
+}
+.masterContainer form .inputBox span {
+  display: block;
+  color: rgb(153, 152, 152);
+  padding-bottom: 5px;
+}
+.masterContainer form .inputBox input,
+.masterContainer form .inputBox select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgb(68, 68, 68);
+}
+.masterContainer form .flexBox {
+  display: flex;
+  gap: 15px;
+}
+.masterContainer form .flexBox .inputBox {
+  flex: 1 1 31%;
+}
+
+.masterContainer form .otp-btn {
+  width: 100%;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.2s linear;
+}
+.masterContainer form .otp-btn:hover {
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+.masterContainer .cardContainer {
+  position: relative;
+  height: 250px;
+  width: 450px;
+  margin-right: 10rem;
+  /* border: 1px solid black; */
+}
+.masterContainer .cardContainer .frontSection {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  border-radius: 10px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+.masterContainer .cardContainer .frontSection .imageSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.masterContainer .cardContainer .frontSection .imageSection :nth-child(1) {
+  height: 40px;
+}
+.masterContainer .cardContainer .frontSection .imageSection :nth-child(2) {
+  height: 80px;
+}
+
+.masterContainer .cardContainer .frontSection .cardNumberBox {
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.masterContainer .cardContainer .frontSection .flexbox {
+  display: flex;
+}
+.masterContainer .cardContainer .frontSection .flexbox .box:nth-child(1) {
+  margin-right: auto;
+}
+.masterContainer .cardContainer .frontSection .flexbox .box {
+  font-size: 1rem;
+  color: #fff;
 }
