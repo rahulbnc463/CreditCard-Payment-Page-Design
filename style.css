@@ -87,7 +87,7 @@
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   transition: transform 0.4s ease-out;
-  transform: perspective(1000px) rotateY(0deg);
+  transform: perspective(100%) rotateY(0deg);
 }
 .masterContainer .cardContainer .frontSection .imageSection {
   display: flex;
