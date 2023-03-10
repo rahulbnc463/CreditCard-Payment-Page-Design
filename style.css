@@ -84,6 +84,8 @@
   backface-visibility: hidden;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   padding: 1rem;
+  transition: transform 0.4s ease-out;
+  transform: perspective(1000px) rotateY(0deg);
 }
 .masterContainer .cardContainer .frontSection .imageSection {
   display: flex;
@@ -113,4 +115,45 @@
 .masterContainer .cardContainer .frontSection .flexbox .box {
   font-size: 1rem;
   color: #fff;
+}
+
+.masterContainer .cardContainer .backSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  border-radius: 10px;
+  padding: 1rem 0;
+  text-align: right;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease-out;
+  transform: perspective(1000px) rotateY(180deg);
+}
+.masterContainer .cardContainer .backSection .stripeSection {
+  background: #000;
+  margin: 1rem 0;
+  height: 3rem;
+}
+.masterContainer .cardContainer .backSection .box {
+  padding: 0 1.2rem;
+}
+.masterContainer .cardContainer .backSection .box span {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.masterContainer .cardContainer .backSection .box .cvvBox {
+  height: 3rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  color: #333;
+  margin-top: 0.5rem;
+}
+.masterContainer .cardContainer .backSection .box img {
+  margin-top: 1.2rem;
+  height: 4rem;
 }
