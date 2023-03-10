@@ -53,7 +53,7 @@
 
 .masterContainer form .otp-btn {
   width: 100%;
-  /* background: linear-gradient(45deg, blueviolet, deeppink); */
+
   background: linear-gradient(45deg, #814bf5, #03a9f4);
   margin-top: 2rem;
   padding: 1rem;
@@ -80,7 +80,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  /* background: linear-gradient(45deg, blueviolet, deeppink); */
+
   background: linear-gradient(45deg, #814bf5, #03a9f4);
   border-radius: 10px;
   backface-visibility: hidden;
@@ -125,7 +125,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  /* background: linear-gradient(45deg, blueviolet, deeppink); */
+
   background: linear-gradient(45deg, #814bf5, #03a9f4);
   border-radius: 10px;
   padding: 1rem 0;
